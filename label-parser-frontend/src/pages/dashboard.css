@@ -1,0 +1,120 @@
+/* Dashboard Container */
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Centering Flex Containers */
+.centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;  /* Stack children vertically */
+}
+
+.upload-box {
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px dashed #007BFF;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.search-container {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(100% - 120px); /* Adjust width considering button */
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Label Cards Styling */
+.labels-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards dynamically */
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+    border: 1px solid #ddd; /* Subtle border for better visibility */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.card .label-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .label-content {
+    color: #666;
+    font-size: 14px;
+}
+/* Centering Flex Containers for Controls */
+.controls {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    background-color: #28a745;  /* A green color for clarity of action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* Ensures it can be centered using text-align on parent */
+}
+
+.reset-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+/* Responsive Handling */
+@media (max-width: 768px) {
+    .upload-box, .search-container {
+        width: 80%;
+    }
+    .card {
+        width: 100%; /* Full width for easier mobile viewing */
+    }
+    .search-input {
+        width: calc(100% - 130px); /* Adjust for smaller screens */
+    }
+}

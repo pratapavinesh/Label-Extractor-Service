@@ -1,0 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/label-parser-frontend/node_modules
+/label-parser-frontend/build
+
+
+# loginService
+/loginService/.env
+/loginService/env
+/loginService/__pycache__/
+
+# labelInfoExtracterService
+/labelInfoExtracterService/.env
+/labelInfoExtracterService/env
+/labelInfoExtracterService/__pycache__/
+
+# handleLabelService
+/handleLabelService/.env
+/handleLabelService/env
+/handleLabelService/__pycache__/
